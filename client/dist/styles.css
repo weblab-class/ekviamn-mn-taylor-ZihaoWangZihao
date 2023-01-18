@@ -27,3 +27,7 @@
   margin-left: -3px;
   top: 40;
 }
+
+.u-flex {
+  display: flex;
+}

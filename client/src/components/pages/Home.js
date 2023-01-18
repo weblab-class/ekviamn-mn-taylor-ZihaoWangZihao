@@ -2,29 +2,29 @@ import React, { useState, useEffect } from "react";
 import { Router } from "@reach/router";
 import jwt_decode from "jwt-decode";
 
-import NotFound from "./pages/NotFound.js";
-import Skeleton from "./pages/Skeleton.js";
-
-import "../utilities.css";
-
-import { socket } from "../client-socket.js";
-
-import { get, post } from "../utilities";
-
+import Skeleton from "./Skeleton";
+import logo from "../../public/logo.jpeg";
 /**
- * Define the "App" component
+ * Define the "Home" component
  */
-const Home = () => {
+const Home = (props) => {
   return (
     <>
-      <h1 class="heading">PositiviTy</h1>
-      <div class="vl"></div>
-      <div>
-        <h2 class="left">Welcome! Please Log In or Sign Up</h2>
-        <img src="../../public/logo.jpeg" class="pic" />
+      <Skeleton
+        handleLogin={props.handleLogin}
+        handleLogout={props.handleLogout}
+        userId={props.userId}
+      />
+      <div class="u-flex">
+        <h1 class="heading">PositiviTy</h1>
+        <div class="vl"></div>
+        <div>
+          <h2 class="left">Welcome! Please Log In or Sign Up</h2>
+          <img src={logo} class="pic" />
+        </div>
       </div>
     </>
   );
 };
 
-export default App;
+export default Home;
