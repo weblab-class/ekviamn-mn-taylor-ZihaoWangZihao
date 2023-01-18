@@ -7,27 +7,32 @@
   height: 750px;
   position: absolute;
   left: 50%;
-  margin-left: -3px;
+  margin: 0 auto;
   top: 20;
-}
-
-.pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  max-width: 100%;
-  height: auto;
-  top: 60;
 }
 
 .left {
   position: absolute;
-  left: 12%;
+  left: 70%;
   margin-left: -3px;
-  top: 40;
+  top: 400px;
+}
+
+.word {
+  position: absolute;
+  left: 66%;
+  margin-left: -3px;
+  top: 300px;
 }
 
 .u-flex {
   display: flex;
+}
+
+.fit {
+  position: absolute;
+  max-width: 40%;
+  max-height: 70%;
+  left: 5%;
+  top: 18%;
 }

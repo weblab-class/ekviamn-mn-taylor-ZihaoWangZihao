@@ -10,17 +10,27 @@ import logo from "../../public/logo.jpeg";
 const Home = (props) => {
   return (
     <>
-      <Skeleton
-        handleLogin={props.handleLogin}
-        handleLogout={props.handleLogout}
-        userId={props.userId}
-      />
-      <div class="u-flex">
-        <h1 class="heading">PositiviTy</h1>
-        <div class="vl"></div>
+      <div class="u-flexColumn">
         <div>
-          <h2 class="left">Welcome! Please Log In or Sign Up</h2>
-          <img src={logo} class="pic" />
+          <h1 class="heading">PositiviTy</h1>
+        </div>
+        <div class="u-flex">
+          <div>
+            <img src={logo} class="fit" />
+          </div>
+          <div class="vl"></div>
+          <div class="u-flexColumn">
+            <div>
+              <h2 class="word">Welcome! Please log in below</h2>
+            </div>
+            <div class="left">
+              <Skeleton
+                handleLogin={props.handleLogin}
+                handleLogout={props.handleLogout}
+                userId={props.userId}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
