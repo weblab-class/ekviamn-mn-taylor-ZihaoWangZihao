@@ -46,6 +46,7 @@ const App = () => {
       <Router>
         <NotFound default />
         <Home path="/Home" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
+        <CreatePage path="/CreatePage"/>
       </Router>
     </>
   );
