@@ -17,13 +17,17 @@ const Profile = (props) => {
       <div class="u-flexColumn">
         <div class="u-flex">
           <div>
-            <img src={profile} class="profile" />
+            <a href="http://localhost:5050/Profile">
+              <img src={profile} class="profile" />
+            </a>
           </div>
           <div>
             <img src={home} class="home" />
           </div>
           <div>
-            <img src={create} class="create" />
+            <a href="http://localhost:5050/CreatePage">
+              <img src={create} class="create" />
+            </a>
           </div>
           <div>
             <img src={friends} class="friends" />
