@@ -34,5 +34,37 @@
   max-width: 40%;
   max-height: 70%;
   left: 5%;
-  top: 18%;
+  top: 15%;
+}
+
+.profile {
+  position: absolute;
+  max-width: 5%;
+  max-height: 7%;
+  top: 90%;
+  left: 85%;
+}
+
+.home {
+  position: absolute;
+  max-width: 5%;
+  max-height: 7%;
+  top: 90%;
+  left: 10%;
+}
+
+.create {
+  position: absolute;
+  max-width: 5%;
+  max-height: 7%;
+  top: 90%;
+  left: 35%;
+}
+
+.friends {
+  position: absolute;
+  max-width: 5%;
+  max-height: 7%;
+  top: 90%;
+  left: 60%;
 }
