@@ -4,6 +4,7 @@ import jwt_decode from "jwt-decode";
 
 import Skeleton from "./Skeleton";
 import logo from "../../public/logo.jpeg";
+
 /**
  * Define the "Home" component
  */
