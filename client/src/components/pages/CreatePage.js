@@ -7,7 +7,7 @@ const CreatePage = (props) => {
     <>
       <div>
         <div>
-          <h1>Create New Message</h1>
+          <h1>Create a new message</h1>
         </div>
       </div>
     </>
