@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Router } from "@reach/router";
 import jwt_decode from "jwt-decode";
 
-const CreatePage = (props) => {
+import profile from "../../public/profile.png";
+import home from "../../public/home.png";
+import create from "../../public/create.png";
+import friends from "../../public/friends.png";
+/**
+ * Define the "Profile" component
+ */
+const Friends = (props) => {
   return (
     <>
       <div class="u-flexColumn">
@@ -33,4 +40,4 @@ const CreatePage = (props) => {
   );
 };
 
-export default CreatePage;
+export default Friends;

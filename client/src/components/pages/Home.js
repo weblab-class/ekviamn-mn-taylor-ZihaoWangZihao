@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Router } from "@reach/router";
 import jwt_decode from "jwt-decode";
 
-import Skeleton from "./Skeleton";
-import logo from "../../public/logo.jpeg";
-
+import profile from "../../public/profile.png";
+import home from "../../public/home.png";
+import create from "../../public/create.png";
+import friends from "../../public/friends.png";
 /**
  * Define the "Home" component
  */
@@ -12,25 +13,26 @@ const Home = (props) => {
   return (
     <>
       <div class="u-flexColumn">
-        <div>
-          <h1 class="heading">PositiviTy</h1>
-        </div>
         <div class="u-flex">
           <div>
-            <img src={logo} class="fit" />
+            <a href="http://localhost:5050/Profile">
+              <img src={profile} class="profile" />
+            </a>
           </div>
-          <div class="vl"></div>
-          <div class="u-flexColumn">
-            <div>
-              <h2 class="word">Welcome! Please log in below</h2>
-            </div>
-            <div class="left">
-              <Skeleton
-                handleLogin={props.handleLogin}
-                handleLogout={props.handleLogout}
-                userId={props.userId}
-              />
-            </div>
+          <div>
+            <a href="http://localhost:5050/Home">
+              <img src={home} class="home" />
+            </a>
+          </div>
+          <div>
+            <a href="http://localhost:5050/CreatePage">
+              <img src={create} class="create" />
+            </a>
+          </div>
+          <div>
+            <a href="http://localhost:5050/Friends">
+              <img src={friends} class="friends" />
+            </a>
           </div>
         </div>
       </div>

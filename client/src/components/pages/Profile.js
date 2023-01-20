@@ -22,7 +22,9 @@ const Profile = (props) => {
             </a>
           </div>
           <div>
-            <img src={home} class="home" />
+            <a href="http://localhost:5050/Home">
+              <img src={home} class="home" />
+            </a>
           </div>
           <div>
             <a href="http://localhost:5050/CreatePage">
@@ -30,7 +32,9 @@ const Profile = (props) => {
             </a>
           </div>
           <div>
-            <img src={friends} class="friends" />
+            <a href="http://localhost:5050/Friends">
+              <img src={friends} class="friends" />
+            </a>
           </div>
         </div>
       </div>
