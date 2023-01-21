@@ -11,20 +11,21 @@ import logo from "../../public/logo.jpeg";
 const LogIn = (props) => {
   return (
     <>
-      <div class="u-flexColumn">
+      <div className="u-flexColumn">
         <div>
-          <h1 class="heading">PositiviTy</h1>
+          <h1 className="heading">PositiviTy</h1>
         </div>
-        <div class="u-flex">
-          <div>
-            <img src={logo} class="fit" />
+        <div className="u-flex">
+          <div className="center">
+            <img src={logo} className="fit" />
           </div>
-          <div class="vl"></div>
-          <div class="u-flexColumn">
+
+          <div className="vl"></div>
+          <div className="u-flexColumn right">
             <div>
-              <h2 class="word">Welcome! Please log in below</h2>
+              <h2 className="word">Welcome! Please log in below</h2>
             </div>
-            <div class="left">
+            <div className="left">
               <Skeleton
                 handleLogin={props.handleLogin}
                 handleLogout={props.handleLogout}
