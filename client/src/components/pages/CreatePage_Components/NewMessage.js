@@ -4,9 +4,18 @@ const NewMessage = (props) => {
 
     return (
         <>
-            <div>
-                <h1>{props.userMessage}</h1>
+            <div style={{
+                    backgroundColor:props.userColor,
+                    position:"relative",
+                    top:"50%",
+                    left:"50%",
+                    transform:"translate(-50%, -50%)",
+                    width:"400px",
+                    heigh:"400px"
+                    }}>
+                {props.userMessage}
             </div>
+
         </>
     );
 };

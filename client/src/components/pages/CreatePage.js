@@ -9,6 +9,7 @@ import NewMessage from "./CreatePage_Components/NewMessage.js";
 
 const CreatePage = (props) => {
   const [message, setMessage] = useState("");
+  const [messageColor, setMessageColor] = useState("")
 
   return (
     <>
@@ -18,14 +19,14 @@ const CreatePage = (props) => {
         </div>
         <div class="u-flex">
           <div>
-            <InputText userMessage={message} mutateMessage={setMessage} />
+            <InputText userMessage={message} mutateMessage={setMessage} userColor={messageColor} mutateColor={setMessageColor}/>
           </div>
           <div class="u-flex-justifyCenter">
-            <NewMessage userMessage={message} mutateMessage={setMessage} />
+            <NewMessage userMessage={message} mutateMessage={setMessage} userColor={messageColor}/>
           </div>
         </div>
         <div>
-          <NavBar />
+          <NavBar/>
         </div>
       </div>
     </>
