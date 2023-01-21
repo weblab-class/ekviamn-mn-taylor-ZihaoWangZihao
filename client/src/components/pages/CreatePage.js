@@ -3,9 +3,8 @@ import { Router } from "@reach/router";
 import jwt_decode from "jwt-decode";
 import profile from "../../public/profile.png";
  
-let text = ""
-let image = ""
 
+/*
 const EmojiMenu = (props) => {
     return (
     <>
@@ -15,37 +14,7 @@ const EmojiMenu = (props) => {
     </>
     );
 };
-
-const InputText = (props) => {
-    const handleChange = (event) => {
-        event.preventDefault();
-    }
-
-    return (
-    <>
-        <div>
-            <h1>User Text</h1>
-            <form>
-                <label>
-                    message:
-                    <input type="text" />
-                </label>
-            </form>
-        </div>
-    </>
-    );
-};
-const NewMessage = (props) => {
-    return (
-        <>
-            <div class="container">
-                <div class="center">
-                <img src={profile} alt="user image"/>
-                </div>
-            </div>
-        </>
-    );
-};
+*/
 
 const CreatePage = (props) => {
     return (
@@ -56,7 +25,6 @@ const CreatePage = (props) => {
             </div>
             <div class="u-flex">
                 <div>
-                    <EmojiMenu/>
                     <InputText/>
                 </div>
                 <div class="u-flex-justifyCenter">
