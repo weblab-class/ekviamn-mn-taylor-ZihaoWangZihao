@@ -1,11 +1,14 @@
+import React, { useState, useEffect } from "react";
+
 const NewMessage = (props) => {
+
     return (
         <>
-            <div class="container">
-                <div class="center">
-                <img src={profile} alt="user image"/>
-                </div>
+            <div>
+                <h1>{props.userMessage}</h1>
             </div>
         </>
     );
 };
+
+export default NewMessage;

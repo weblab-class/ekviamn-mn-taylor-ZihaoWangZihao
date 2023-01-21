@@ -1,6 +1,11 @@
+import React, { useState, useEffect } from "react";
+
 const InputText = (props) => {
+    
+    
     const handleChange = (event) => {
         event.preventDefault();
+        props.mutateMessage(event.target.value)
     }
 
     return (
@@ -10,10 +15,12 @@ const InputText = (props) => {
             <form>
                 <label>
                     message:
-                    <input type="text" />
+                    <input type="text" onChange={handleChange}/>
                 </label>
             </form>
         </div>
     </>
     );
 };
+
+export default InputText;

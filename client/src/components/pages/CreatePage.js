@@ -3,11 +3,13 @@ import { Router } from "@reach/router";
 import jwt_decode from "jwt-decode";
 import profile from "../../public/profile.png";
 
-let text = "";
-let image = "";
+import InputText from "./CreatePage_Components/InputText.js"
+import NewMessage from "./CreatePage_Components/NewMessage.js"
 
 const CreatePage = (props) => {
-  return (
+  const [message, setMessage] = useState("");
+  
+    return (
     <>
       <div class="u-flexColumn">
         <div class="heading">
@@ -15,11 +17,10 @@ const CreatePage = (props) => {
         </div>
         <div class="u-flex">
           <div>
-            <EmojiMenu />
-            <InputText />
+            <InputText userMessage={message} mutateMessage = {setMessage}/>
           </div>
           <div class="u-flex-justifyCenter">
-            <NewMessage uText={text} uImage={image} />
+            <NewMessage userMessage={message} mutateMessage = {setMessage}/>
           </div>
         </div>
       </div>
