@@ -35,6 +35,9 @@ const Home = (props) => {
             </a>
           </div>
         </div>
+        <div>
+          <img src={home} class="homeImage" />
+        </div>
       </div>
     </>
   );

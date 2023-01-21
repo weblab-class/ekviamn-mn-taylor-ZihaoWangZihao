@@ -68,3 +68,11 @@
   top: 90%;
   left: 60%;
 }
+
+.homeImage {
+  position: absolute;
+  max-width: 5%;
+  max-height: 7%;
+  top: 30%;
+  left: 45%;
+}
