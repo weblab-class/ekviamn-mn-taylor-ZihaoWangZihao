@@ -19,11 +19,9 @@
 }
 
 .word {
-  /* position: absolute;
-  left: 66%;
-  margin-left: -3px;
-  top: 300px;
-  object-fit: scale-down; */
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .u-flex {
@@ -87,4 +85,17 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+}
+
+.hl {
+  border-left: 3px solid black;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 30;
+}
+
+.change {
+  text-align: center;
 }
