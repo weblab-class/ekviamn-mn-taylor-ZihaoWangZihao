@@ -5,36 +5,29 @@
 .vl {
   border-left: 3px solid black;
   height: 750px;
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   margin: 0 auto;
-  top: 20;
+  top: 20; */
 }
 
 .left {
-  position: absolute;
+  /* position: absolute;
   left: 70%;
   margin-left: -3px;
-  top: 400px;
+  top: 400px; */
 }
 
 .word {
-  position: absolute;
+  /* position: absolute;
   left: 66%;
   margin-left: -3px;
   top: 300px;
+  object-fit: scale-down; */
 }
 
 .u-flex {
   display: flex;
-}
-
-.fit {
-  position: absolute;
-  max-width: 40%;
-  max-height: 70%;
-  left: 5%;
-  top: 15%;
 }
 
 .profile {
@@ -75,4 +68,23 @@
   max-height: 7%;
   top: 30%;
   left: 45%;
+}
+
+.fit {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25%;
+}
+
+.center {
+  width: 50%;
+}
+
+.right {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
