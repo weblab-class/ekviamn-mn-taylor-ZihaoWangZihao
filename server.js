@@ -17,7 +17,6 @@
 // this is a tool provided by staff, so you don't need to worry about it
 const validator = require("./validator");
 validator.checkSetup();
-require("dotenv").config();
 
 //import libraries needed for the webserver to work!
 const http = require("http");
@@ -31,11 +30,12 @@ const auth = require("./auth");
 
 // socket stuff
 const socketManager = require("./server-socket");
-const socket = require("socket.io-client/lib/socket");
 
 // Server configuration below
 // TODO change connection URL after setting up your team database
-const mongoConnectionURL = process.env.ATLAS_SRV;
+const mongoConnectionURL =
+"mongodb+srv://mtaylor121303:ninjapanda@cluster0.qxgrcrh.mongodb.net/?retryWrites=true&w=majority";
+
 // TODO change database name to the name you chose
 const databaseName = "cluster0";
 
@@ -60,7 +60,7 @@ app.use(express.json());
 app.use(
   session({
     // TODO: add a SESSION_SECRET string in your .env file, and replace the secret with process.env.SESSION_SECRET
-    secret: process.env.SESSION_SECRET,
+    secret: "session-secret",
     resave: false,
     saveUninitialized: false,
   })
@@ -98,9 +98,9 @@ app.use((err, req, res, next) => {
 });
 
 // hardcode port to 3000 for now
-const port = process.env.PORT || 3000;
+const port = 3000;
 const server = http.Server(app);
-socket.init(server);
+socketManager.init(server);
 
 server.listen(port, () => {
   console.log(`Server running on port: ${port}`);
