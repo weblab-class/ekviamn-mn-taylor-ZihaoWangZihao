@@ -7,7 +7,7 @@ import NavBar from "./NavBar.js";
 import InputText from "./CreatePage_Components/InputText.js";
 import NewMessage from "./CreatePage_Components/NewMessage.js";
 
-const CreatePage = (props) => {
+const CreatePage2 = (props) => {
   const [message, setMessage] = useState("");
   const [messageColor, setMessageColor] = useState("");
 
@@ -36,4 +36,4 @@ const CreatePage = (props) => {
   );
 };
 
-export default CreatePage;
+export default CreatePage2;

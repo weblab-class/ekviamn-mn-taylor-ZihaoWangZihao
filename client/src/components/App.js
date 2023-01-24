@@ -8,6 +8,7 @@ import Profile from "./pages/Profile.js";
 import CreatePage from "./pages/CreatePage.js";
 import Home from "./pages/Home.js";
 import Friends from "./pages/Friends.js";
+import CreatePage2 from "./pages/CreatePage2.js";
 
 import "../utilities.css";
 
@@ -59,6 +60,7 @@ const App = () => {
         <CreatePage path="/CreatePage" />
         <Home path="/Home" />
         <Friends path="/Friends" />
+        <CreatePage2 path="/CreatePage2" />
       </Router>
     </>
   );
