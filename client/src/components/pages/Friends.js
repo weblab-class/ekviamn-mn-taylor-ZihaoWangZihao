@@ -8,6 +8,10 @@ import NavBar from "./NavBar.js";
 const Friends = (props) => {
   return (
     <>
+      <div className="u-flexColumn">
+        <h1 className="word">Your Friends' Motivations</h1>
+      </div>
+
       <NavBar />
     </>
   );
