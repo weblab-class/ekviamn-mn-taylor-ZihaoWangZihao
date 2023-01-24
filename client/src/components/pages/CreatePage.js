@@ -21,7 +21,7 @@ const CreatePage = (props) => {
           <div>
             <InputText userMessage={message} mutateMessage={setMessage} userColor={messageColor} mutateColor={setMessageColor}/>
           </div>
-          <div class="u-flex-justifyCenter">
+          <div class="u-flex container">
             <NewMessage userMessage={message} mutateMessage={setMessage} userColor={messageColor}/>
           </div>
         </div>

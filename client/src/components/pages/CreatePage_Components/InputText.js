@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 const InputText = (props) => {
     
-    
     const handleChangeText = (event) => {
         event.preventDefault();
         props.mutateMessage(event.target.value)
@@ -24,7 +23,7 @@ const InputText = (props) => {
             </form>
             <form>
                 <label>
-                    color:
+                    color  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
                     <input type="text" onChange={handleChangeColor}/>
                 </label>
             </form>

@@ -5,17 +5,17 @@ const NewMessage = (props) => {
     return (
         <>
             <div style={{
-                    backgroundColor:props.userColor,
-                    position:"relative",
-                    top:"50%",
-                    left:"50%",
-                    transform:"translate(-50%, -50%)",
-                    width:"400px",
-                    heigh:"400px"
-                    }}>
-                {props.userMessage}
+                height: "400px",
+                width:"400px",
+                backgroundColor:props.userColor,
+                display:"flex",
+                alignItems:"center",
+                justifyContent:"center"
+            }}>
+                <div style={{
+                    textAlign:"right"
+                }}>{props.userMessage}</div>
             </div>
-
         </>
     );
 };
