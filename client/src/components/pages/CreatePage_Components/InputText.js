@@ -25,13 +25,13 @@ const InputText = (props) => {
         <h1>Write your motivational message!</h1>
         <form>
           <label>
-            message:
+            Message:
             <input type="text" onChange={handleChangeText} />
           </label>
         </form>
         <form>
           <label>
-            background color:
+            Background Color:
             <input type="text" onChange={handleChangeColor} />
           </label>
         </form>

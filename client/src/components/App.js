@@ -59,7 +59,6 @@ const App = () => {
         <Profile path="/Profile" />
         <CreatePage path="/CreatePage" />
         <Home path="/Home" />
-        <Friends path="/Friends" />
         <CreatePage2 path="/CreatePage2" />
       </Router>
     </>

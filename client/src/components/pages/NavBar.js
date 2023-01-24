@@ -27,11 +27,6 @@ const NavBar = (props) => {
               <img src={create} class="create" />
             </a>
           </div>
-          <div>
-            <a href="http://localhost:5050/Friends">
-              <img src={friends} class="friends" />
-            </a>
-          </div>
         </div>
       </div>
     </>

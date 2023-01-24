@@ -13,15 +13,9 @@ const Profile = (props) => {
       <div>
         <h1 className="word">Name of Person</h1>
       </div>
-      <div className="u-flex">
-        <div className="center">
-          <h2 class="change">Messages Received</h2>
-        </div>
-        <div className="hl"></div>
 
-        <div className="center">
-          <h2 class="change">Messages Sent</h2>
-        </div>
+      <div className="center">
+        <h2 class="change">Messages Sent</h2>
       </div>
 
       <NavBar />

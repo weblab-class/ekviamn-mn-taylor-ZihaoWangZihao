@@ -49,7 +49,7 @@
   max-width: 5%;
   max-height: 7%;
   top: 90%;
-  left: 35%;
+  left: 50%;
 }
 
 .friends {
@@ -78,7 +78,8 @@
 }
 
 .center {
-  width: 50%;
+  position: absolute;
+  left: 44%;
 }
 
 .right {
