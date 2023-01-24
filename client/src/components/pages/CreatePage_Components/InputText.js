@@ -6,9 +6,18 @@ const InputText = (props) => {
         event.preventDefault();
         props.mutateMessage(event.target.value)
     }
+    const handleChangeFont = (event) => {
+        event.preventDefault();
+        props.mutateFont(event.target.value)
+    }
     const handleChangeColor = (event) => {
         event.preventDefault();
         props.mutateColor(event.target.value)
+    }
+    const handlePost = (event) => {
+        event.preventDefault();
+        alert(props.userMessage +" "+  props.userColor)
+        // API Post
     }
 
     return (
@@ -21,11 +30,14 @@ const InputText = (props) => {
                     <input type="text" onChange={handleChangeText}/>
                 </label>
             </form>
-            <form>
+           <form>
                 <label>
-                    color  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+                    background color  &nbsp;&nbsp;&nbsp; :
                     <input type="text" onChange={handleChangeColor}/>
                 </label>
+            </form>
+            <form>
+                <button onClick={handlePost}>POST</button>
             </form>
         </div>
     </>

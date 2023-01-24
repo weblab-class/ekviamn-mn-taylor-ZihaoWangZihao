@@ -10,10 +10,13 @@ const NewMessage = (props) => {
                 backgroundColor:props.userColor,
                 display:"flex",
                 alignItems:"center",
-                justifyContent:"center"
+                justifyContent:"center",
+                borderStyle: "solid",
+                borderColor:"yellow"
             }}>
                 <div style={{
-                    textAlign:"right"
+                    textAlign:"right",
+                    fontFamily:"Times New Roman",
                 }}>{props.userMessage}</div>
             </div>
         </>
