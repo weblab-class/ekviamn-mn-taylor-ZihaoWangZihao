@@ -32,6 +32,15 @@ router.get("/whoami", (req, res) => {
   res.send(req.user);
 });
 
+data ={
+  posts: [{
+    user_id:"1",
+    text: "Have a Good Day",
+    background: "green"
+  }]
+
+}
+
 router.post("/initsocket", (req, res) => {
   // do nothing if user not logged in
   if (req.user)
@@ -44,6 +53,11 @@ router.post("/initsocket", (req, res) => {
 // |------------------------------|
 
 // anything else falls to this "not found" case
+
+router.get("/post", (req,res) => {
+  res.send(data.posts);
+});
+
 router.all("*", (req, res) => {
   console.log(`API route not found: ${req.method} ${req.url}`);
   res.status(404).send({ msg: "API route not found" });
