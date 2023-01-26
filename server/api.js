@@ -53,6 +53,16 @@ router.post("/initsocket", (req, res) => {
 // | write your API methods below!|
 // |------------------------------|
 
+router.post("/post", (req,res) => {
+  const NewPost = new Post({
+    user_id: req.body.user_id,
+    text: req.body.text,
+    background: req.body.background
+  });
+
+  NewPost.save()
+})
+
 // anything else falls to this "not found" case
 
 router.get("/post", (req,res) => {
