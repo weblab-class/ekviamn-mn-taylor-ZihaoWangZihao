@@ -24,7 +24,7 @@ const Feed = (props) => {
     return(
         <>
             <div>
-                {messagelist}
+                Feed goes here!
             </div>
         </>
     )
