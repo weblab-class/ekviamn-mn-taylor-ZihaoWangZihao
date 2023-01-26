@@ -11,7 +11,7 @@ const express = require("express");
 
 // import models so we can interact with the database
 const User = require("./models/user");
-const Message = require("./models/message")
+const Message = require("./models/message");
 
 // import authentication library
 const auth = require("./auth");
@@ -33,14 +33,15 @@ router.get("/whoami", (req, res) => {
   res.send(req.user);
 });
 
-data ={
-  posts: [{
-    user_id:"1",
-    text: "Have a Good Day",
-    background: "green"
-  }]
-
-}
+data = {
+  posts: [
+    {
+      user_id: "1",
+      text: "Have a Good Day",
+      background: "green",
+    },
+  ],
+};
 
 router.post("/initsocket", (req, res) => {
   // do nothing if user not logged in
@@ -53,22 +54,21 @@ router.post("/initsocket", (req, res) => {
 // | write your API methods below!|
 // |------------------------------|
 
-router.post("/post", (req,res) => {
+router.post("/post", (req, res) => {
   const NewMessage = new Message({
     user_id: req.body.user_id,
     text: req.body.text,
-    background: req.body.background
+    background: req.body.background,
   });
 
-  NewMessage.save()
-})
+  NewMessage.save();
+});
 
 // anything else falls to this "not found" case
 
-router.get("/post", (req,res) => {
-  res.send(Message.find({}));
+router.get("/post", (req, res) => {
+  res.send(data.posts);
 });
-
 
 router.all("*", (req, res) => {
   console.log(`API route not found: ${req.method} ${req.url}`);
