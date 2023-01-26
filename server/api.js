@@ -67,7 +67,7 @@ router.post("/post", (req, res) => {
 // anything else falls to this "not found" case
 
 router.get("/post", (req, res) => {
-  res.send(data.posts);
+  res.send(Message.find({}));
 });
 
 router.all("*", (req, res) => {
