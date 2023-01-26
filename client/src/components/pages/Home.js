@@ -4,6 +4,7 @@ import jwt_decode from "jwt-decode";
 import NavBar from "./NavBar.js";
 import background_image from "../../public/logo.jpeg";
 import LogIn from "./LogIn.js";
+import Feed from "../modules/Feed.js"
 /**
  * Define the "Home" component
  */
@@ -16,7 +17,9 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
       <div class="u-flexColumn">
         <h1 className="word">Today's Motivation</h1>
       </div>
-
+      <div>
+          <Feed/>
+      </div>
       <NavBar />
     </>
   );
