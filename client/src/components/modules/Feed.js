@@ -17,12 +17,13 @@ const Feed = (props) => {
         )
     }
         
-    return 
+    return(
         <>
             <div>
                 {messagelist}
             </div>
         </>
+    )
 }
 
 export default Feed;
