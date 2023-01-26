@@ -6,9 +6,8 @@ const Feed = (props) => {
 
     useEffect(() => get("api/message").then(
         (MessageObjs) => (setMessages(MessageObjs))
-        ))
+        ), [])
 
-    
     let messagelist = null;
     const hasMessages = messages.length !== 0;
     if (hasMessages) {
