@@ -8,17 +8,7 @@ const Feed = (props) => {
     //    (MessageObjs) => (setMessages(MessageObjs))
     //    ), [])
 
-    let messagelist = null;
-    const hasMessages = messages.length !== 0;
-    if (hasMessages) {
-        messageList = messages.map((message) =>
-            <NewMessage userMessage={message.text} userColor={message.background} />
-        )
-    }
-    else(
-        messageList = 
-        <div>No messages</div>
-    )
+
         
     return(
         <>
