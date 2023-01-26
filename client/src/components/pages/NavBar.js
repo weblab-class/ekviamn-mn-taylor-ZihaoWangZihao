@@ -14,18 +14,20 @@ const NavBar = (props) => {
       <div class="u-flexColumn">
         <div class="u-flex">
           <div>
-            <Link to={`/Profile.js/`}>Profile</Link>
-            <img src={profile} class="profile" />
-          </div>
-          <div>
-            <a href="http://localhost:5050/Home">
+            <Link to={`/`}>
               <img src={home} class="home" />
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="http://localhost:5050/CreatePage">
+            <Link to={`/Profile`}>
+              <img src={profile} class="profile" />
+            </Link>
+          </div>
+
+          <div>
+            <Link to={`/CreatePage`}>
               <img src={create} class="create" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
