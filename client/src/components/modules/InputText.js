@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {get, post} from "../../utilities.js";
+import { get, post } from "../../utilities.js";
 
 const InputText = (props) => {
   const handleChangeText = (event) => {
@@ -16,10 +16,10 @@ const InputText = (props) => {
   };
   const handlePost = (event) => {
     event.preventDefault();
-    post("/post",{
+    post("/api/post", {
       user_id: props.user_id,
       message: props.userMessage,
-      background: props.userColor
+      background: props.userColor,
     });
   };
 
