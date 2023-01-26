@@ -14,7 +14,7 @@ const CreatePage = (props) => {
   return (
     <>
       <div className="u-flexColumn">
-        <div class="heading">
+        <div className="heading">
           <h1 className="word">Create New Message</h1>
         </div>
         <div className="box">

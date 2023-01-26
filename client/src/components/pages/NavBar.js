@@ -11,22 +11,22 @@ import friends from "../../public/friends.png";
 const NavBar = (props) => {
   return (
     <>
-      <div class="u-flexColumn">
-        <div class="u-flex">
+      <div className="u-flexColumn">
+        <div className="u-flex">
           <div>
             <Link to={`/`}>
-              <img src={home} class="home" />
+              <img src={home} className="home" />
             </Link>
           </div>
           <div>
             <Link to={`/Profile`}>
-              <img src={profile} class="profile" />
+              <img src={profile} className="profile" />
             </Link>
           </div>
 
           <div>
             <Link to={`/CreatePage`}>
-              <img src={create} class="create" />
+              <img src={create} className="create" />
             </Link>
           </div>
         </div>

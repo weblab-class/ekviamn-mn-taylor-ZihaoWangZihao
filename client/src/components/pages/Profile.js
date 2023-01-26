@@ -15,7 +15,7 @@ const Profile = (props) => {
       </div>
 
       <div className="center">
-        <h2 class="change">Messages Sent</h2>
+        <h2 className="change">Messages Sent</h2>
       </div>
 
       <NavBar />
