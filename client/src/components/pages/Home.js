@@ -3,10 +3,14 @@ import { Router } from "@reach/router";
 import jwt_decode from "jwt-decode";
 import NavBar from "./NavBar.js";
 import background_image from "../../public/logo.jpeg";
+import LogIn from "./LogIn.js";
 /**
  * Define the "Home" component
  */
-const Home = (props) => {
+const Home = ({ userId, handleLogin, handleLogout }) => {
+  if (userId == null) {
+    return <LogIn path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />;
+  }
   return (
     <>
       <div class="u-flexColumn">

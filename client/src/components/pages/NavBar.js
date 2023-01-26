@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Router } from "@reach/router";
 import jwt_decode from "jwt-decode";
+import { Link } from "@reach/router";
 
 import profile from "../../public/profile.png";
 import home from "../../public/home.png";
@@ -13,9 +14,8 @@ const NavBar = (props) => {
       <div class="u-flexColumn">
         <div class="u-flex">
           <div>
-            <a href="http://localhost:5050/Profile">
-              <img src={profile} class="profile" />
-            </a>
+            <Link to={`/Profile.js/`}>Profile</Link>
+            <img src={profile} class="profile" />
           </div>
           <div>
             <a href="http://localhost:5050/Home">
