@@ -11,7 +11,7 @@ const express = require("express");
 
 // import models so we can interact with the database
 const User = require("./models/user");
-const Post = require("./models/post")
+const Message = require("./models/message")
 
 // import authentication library
 const auth = require("./auth");
@@ -54,19 +54,19 @@ router.post("/initsocket", (req, res) => {
 // |------------------------------|
 
 router.post("/post", (req,res) => {
-  const NewPost = new Post({
+  const NewMessage = new Message({
     user_id: req.body.user_id,
     text: req.body.text,
     background: req.body.background
   });
 
-  NewPost.save()
+  NewMessage.save()
 })
 
 // anything else falls to this "not found" case
 
 router.get("/post", (req,res) => {
-  res.send(Post.find({}));
+  res.send(Message.find({}));
 });
 
 

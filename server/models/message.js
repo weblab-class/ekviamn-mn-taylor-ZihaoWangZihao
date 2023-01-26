@@ -1,9 +1,9 @@
 const mongoose = require("mongoose")
 
-const PostSchema = new mongoose.Schema({
+const MessageSchema = new mongoose.Schema({
     user_id: String,
     text: String,
     background: String
 })
 
-module.exports = mongoose.model("post", PostSchema)
+module.exports = mongoose.model("Message", MessageSchema)

@@ -4,8 +4,8 @@ import jwt_decode from "jwt-decode";
 import profile from "../../public/profile.png";
 import NavBar from "./NavBar.js";
 
-import InputText from "./CreatePage_Components/InputText.js";
-import NewMessage from "./CreatePage_Components/NewMessage.js";
+import InputText from "../modules/InputText.js";
+import NewMessage from "../modules/NewMessage.js";
 
 const CreatePage = (props) => {
   const [message, setMessage] = useState("");
