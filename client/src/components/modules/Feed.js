@@ -16,6 +16,10 @@ const Feed = (props) => {
             <NewMessage userMessage={message.text} userColor={message.background} />
         )
     }
+    else(
+        messageList = 
+        <div>No messages</div>
+    )
         
     return(
         <>

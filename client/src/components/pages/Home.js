@@ -18,7 +18,6 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
         <h1 className="word">Today's Motivation</h1>
       </div>
       <div>
-          <Feed/>
       </div>
       <NavBar />
     </>
