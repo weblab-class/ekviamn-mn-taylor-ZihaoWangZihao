@@ -30,7 +30,6 @@ const auth = require("./auth");
 
 // socket stuff
 const socketManager = require("./server-socket");
-const socket = require("socket.io-client/lib/socket");
 
 // Server configuration below
 // TODO change connection URL after setting up your team database
@@ -99,7 +98,7 @@ app.use((err, req, res, next) => {
 // hardcode port to 3000 for now
 const port = process.env.PORT || 3000;
 const server = http.Server(app);
-socket.init(server);
+socketManager.init(server);
 
 server.listen(port, () => {
   console.log(`Server running on port: ${port}`);
