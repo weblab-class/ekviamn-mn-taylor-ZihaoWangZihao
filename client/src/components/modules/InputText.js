@@ -17,7 +17,6 @@ const InputText = (props) => {
   const handlePost = (event) => {
     event.preventDefault();
     post("/post",{
-      user_id: props.user_id,
       message: props.userMessage,
       background: props.userColor
     });

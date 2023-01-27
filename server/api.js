@@ -56,7 +56,6 @@ router.post("/initsocket", (req, res) => {
 
 router.post("/post", (req, res) => {
   const NewMessage = new Message({
-    user_id: req.body.user_id,
     text: req.body.text,
     background: req.body.background,
   });
