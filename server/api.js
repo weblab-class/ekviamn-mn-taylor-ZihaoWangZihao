@@ -56,8 +56,9 @@ router.post("/initsocket", (req, res) => {
 
 router.post("/post", (req, res) => {
   const NewMessage = new Message({
+    creator_id: req.body.creator_id,
     text: req.body.text,
-    background: req.body.background,
+    background: req.body.background
   });
 
   NewMessage.save();
@@ -65,8 +66,8 @@ router.post("/post", (req, res) => {
 
 // anything else falls to this "not found" case
 
-router.get("/post", (req, res) => {
-  res.send(Message.find({}));
+router.get("/message", (req, res) => {
+  Message.find({}).then((messages) => res.send(messages) );
 });
 
 router.all("*", (req, res) => {

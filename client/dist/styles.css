@@ -126,3 +126,9 @@
   left: 40%;
   bottom: 55%;
 }
+
+.feed {
+  position: absolute;
+  left: 35%;
+  top: 28%;  
+}

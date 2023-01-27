@@ -48,8 +48,8 @@ const App = () => {
   return (
     <>
       <Router>
-        <Profile path="/Profile" />
-        <CreatePage path="/CreatePage" />
+        <Profile path="/Profile" userId={userId}/>
+        <CreatePage path="/CreatePage" userId={userId}/>
         <Home path="/" userId={userId} handleLogin={handleLogin} handleLogout={handleLogout} />
         <NotFound default />
       </Router>

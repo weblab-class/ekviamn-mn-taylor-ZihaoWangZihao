@@ -22,6 +22,7 @@ const CreatePage = (props) => {
         </div>
         <div className="text">
           <InputText
+            userID={props.userId}
             userMessage={message}
             mutateMessage={setMessage}
             userColor={messageColor}

@@ -17,8 +17,8 @@ const InputText = (props) => {
   const handlePost = (event) => {
     event.preventDefault();
     post("/api/post", {
-      user_id: props.user_id,
-      message: props.userMessage,
+      creator_id: props.userId,
+      text: props.userMessage,
       background: props.userColor,
     });
   };

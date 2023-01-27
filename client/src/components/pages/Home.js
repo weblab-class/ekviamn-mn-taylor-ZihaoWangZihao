@@ -17,8 +17,8 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
       <div className="u-flexColumn">
         <h1 className="word">Today's Motivation</h1>
       </div>
-      <div>
-        <Feed />
+      <div className="feed">
+        <Feed userId={userId} filter={false}/>
       </div>
       <NavBar />
     </>
